@@ -2,8 +2,8 @@ package com.comp;
 
 public class auto {
     private String model;
-    private double gog;
-    private int md;
+    private double gallons;
+    private int miles;
 
     public auto(String name, double gallons){
         model = name;
@@ -18,16 +18,16 @@ public class auto {
 
     public void SetGallons(double gallons){
         if (gallons < 0)
-            gog = 0;
+            this.gallons = 0;
         else
-            gog=gallons;
+            this.gallons = gallons;
     }
 
     public void SetMiles(int miles){
         if (miles < 0)
-            md = 0;
+            this.miles = 0;
         else
-            md=miles;
+            this.miles = miles;
     }
     public String toString()
     {
@@ -37,7 +37,13 @@ public class auto {
     public String GetModel(){
         return model;}
     public int GetMiles(){
-        return md;}
+        return this.miles;}
     public double GetGallons(){
-        return gog;}
+        return this.miles;}
+    public boolean equals (Object dog) {
+        if (dog instanceof auto && toString().equals(dog.toString()))
+            return true;
+        else
+            return false;
+    }
 }
