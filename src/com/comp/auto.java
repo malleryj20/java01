@@ -5,8 +5,8 @@ public class auto {
     private double gallons;
     private int miles;
 
-    public auto(String name, double gallons){
-        model = name;
+    public auto(String modelName, double gallons){
+        model = modelName;
         SetGallons(gallons);
     }
 
@@ -28,6 +28,9 @@ public class auto {
             this.miles = 0;
         else
             this.miles = miles;
+    }
+    public void setModel(String newmod){
+        model = newmod;
     }
     public String toString()
     {
