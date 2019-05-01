@@ -21,7 +21,7 @@ public class SpriteClient extends Application {
         int avg = 0;
         String test;
         boolean stop = true;
-        for (int i = 0; i <= 11; i++){
+        /*for (int i = 0; i <= 11; i++){
             while (stop){
 
                 test = JOptionPane.showInputDialog("Temperature for month "+ (i+1) +":");
@@ -38,10 +38,10 @@ public class SpriteClient extends Application {
             stop = true;
 
 
-        }
-        GraphicsContext gc = JIGraphicsUtility.setUpGraphics(stage, "Temperature Chart", 200, 370);
+        } */
+        GraphicsContext gc = JIGraphicsUtility.setUpGraphics(stage, "Shapes", 200, 370);
 
-        new Sprite(10, Integer.parseInt(g.get(0).toString())).draw(gc, "Jan");
+        /*new Sprite(10, Integer.parseInt(g.get(0).toString())).draw(gc, "Jan");
         new Sprite(40, Integer.parseInt(g.get(1).toString())).draw(gc, "Feb");
         new Sprite(70, Integer.parseInt(g.get(2).toString())).draw(gc, "Mar");
         new Sprite(100, Integer.parseInt(g.get(3).toString())).draw(gc, "Apr");
@@ -52,7 +52,7 @@ public class SpriteClient extends Application {
         new Sprite(250, Integer.parseInt(g.get(8).toString())).draw(gc, "Sep");
         new Sprite(280, Integer.parseInt(g.get(9).toString())).draw(gc, "Oct");
         new Sprite(310, Integer.parseInt(g.get(10).toString())).draw(gc, "Nov");
-        new Sprite(340, Integer.parseInt(g.get(11).toString())).draw(gc, "Dec");
+        new Sprite(340, Integer.parseInt(g.get(11).toString())).draw(gc, "Dec");*/
 
 
         /* s1 = new Sprite(100, 50, .5);
@@ -62,6 +62,10 @@ public class SpriteClient extends Application {
         s1.draw(gc);
         s2.draw(gc);
         s3.draw(gc); */
+        Shape[] drawUs = {new Circle(30, 40, 15), new Rectangle(100, 100, 30, 43), new Triangle(170, 50, 20, 40)};
+        for (int i = 0; i < drawUs.length; i++){
+            drawUs[i].draw(gc);
+        }
     }
 
     public static void main(String[] args) {
