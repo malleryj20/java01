@@ -7,8 +7,8 @@ public class ArrayFill2D {
 
     }
     public static boolean[][] makeGrid(int rows, int cols){
-        boolean[][] grid;
-        ArrayList<Boolean> a = new ArrayList<Boolean>();
+            boolean[][] grid;
+            ArrayList<Boolean> a = new ArrayList<Boolean>();
         ArrayList<Boolean[]> b = new ArrayList<Boolean[]>();
         boolean t = false;
         for (int i = 1; i <= rows; i++){
